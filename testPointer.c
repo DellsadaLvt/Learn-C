@@ -34,6 +34,7 @@ void test1( uint32_t add, uint8_t *buffer){
 	uint32_t u32Pos;
 	for( u32Pos=0; u32Pos<5; u32Pos++)
 		printf("%d\n", *(uint16_t*)(buffer + u32Pos*2));
+		printf("%d\n", *(uint16_t*)buffer + u32Pos*2);
 
 }
 
